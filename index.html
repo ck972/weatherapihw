@@ -56,7 +56,7 @@
             	}
 
 
-		let query = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + unit + "&APPID=" +YourWeatherAppID;
+		let query = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + unit + "&APPID=" +YourWeatherAppID;
 
 		if($('#celcius').is(':checked')) {
             		unit = "metric";
@@ -102,7 +102,7 @@
             }
 
             if("weather" in json) {
-            	$("#tempImg").attr("src", "http://openweathermap.org/img/wn/" + json.weather[0]['icon'] + "@2x.png");
+            	$("#tempImg").attr("src", "https://openweathermap.org/img/wn/" + json.weather[0]['icon'] + "@2x.png");
 
             	$("#tempImg").prop("alt", json.weather[0]['description']);
 
